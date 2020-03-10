@@ -5,7 +5,7 @@ let SHRINK_COLOR = "#FF8926";
 let circle_color = GROW_COLOR;
 
 function setup() {
-  createCanvas(windowWidth - 50, windowHeight - 50);
+  createCanvas(windowWidth, windowHeight - 50);
   frameRate(60);
 }
 
@@ -22,8 +22,8 @@ function draw() {
   stroke(0x41, 0xd9, 0xa6, 0.3);
   fill(color(circle_color));
   ellipse(
-    (windowWidth-50)/2,
-    (windowHeight-50)/2,
+    windowWidth/2,
+    windowHeight/2,
     200 + rval
   );
 }
